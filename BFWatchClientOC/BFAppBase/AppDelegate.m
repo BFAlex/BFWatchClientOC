@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self showGuideScene];
+    
     return YES;
 }
 
@@ -47,5 +50,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Private
+/**
+ 切换引导场景
+ */
+- (void)showGuideScene {
+    // 获取引导场景控制器
+    UIViewController *rootVC = [BFStoryboardTool bf_storyboardWithName:@"BFGuideSB" bundle:nil instantiateViewControllerWithIdentifier:@"BFGuideVCID"];
+    
+    self.window.rootViewController = rootVC;
+}
 
 @end

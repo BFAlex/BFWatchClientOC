@@ -15,6 +15,9 @@
 		A8145BE31FB15E2800FB3ED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8145BE21FB15E2800FB3ED2 /* main.m */; };
 		A8145BED1FB15E2800FB3ED2 /* BFWatchClientOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8145BEC1FB15E2800FB3ED2 /* BFWatchClientOCTests.m */; };
 		A8145BF81FB15E2800FB3ED2 /* BFWatchClientOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8145BF71FB15E2800FB3ED2 /* BFWatchClientOCUITests.m */; };
+		A8145C0A1FB1649400FB3ED2 /* BFGuideSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8145C091FB1649400FB3ED2 /* BFGuideSB.storyboard */; };
+		A8145C0D1FB164BB00FB3ED2 /* BFGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8145C0C1FB164BB00FB3ED2 /* BFGuideVC.m */; };
+		A8145C131FB1850E00FB3ED2 /* BFStoryboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8145C121FB1850E00FB3ED2 /* BFStoryboardTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		A8145BF31FB15E2800FB3ED2 /* BFWatchClientOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFWatchClientOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8145BF71FB15E2800FB3ED2 /* BFWatchClientOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFWatchClientOCUITests.m; sourceTree = "<group>"; };
 		A8145BF91FB15E2800FB3ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8145C091FB1649400FB3ED2 /* BFGuideSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BFGuideSB.storyboard; sourceTree = "<group>"; };
+		A8145C0B1FB164BB00FB3ED2 /* BFGuideVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFGuideVC.h; sourceTree = "<group>"; };
+		A8145C0C1FB164BB00FB3ED2 /* BFGuideVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFGuideVC.m; sourceTree = "<group>"; };
+		A8145C111FB1850E00FB3ED2 /* BFStoryboardTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFStoryboardTool.h; sourceTree = "<group>"; };
+		A8145C121FB1850E00FB3ED2 /* BFStoryboardTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFStoryboardTool.m; sourceTree = "<group>"; };
+		A8145C151FB187C800FB3ED2 /* BFWatchClientOC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFWatchClientOC.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +110,15 @@
 		A8145BD21FB15E2800FB3ED2 /* BFWatchClientOC */ = {
 			isa = PBXGroup;
 			children = (
-				A8145BD31FB15E2800FB3ED2 /* AppDelegate.h */,
-				A8145BD41FB15E2800FB3ED2 /* AppDelegate.m */,
+				A8145C101FB184A500FB3ED2 /* Main(主界面模块) */,
+				A8145C0F1FB1843F00FB3ED2 /* Login(登录模块) */,
+				A8145C071FB1640000FB3ED2 /* Guide(引导模块) */,
+				A8145C081FB1644900FB3ED2 /* Storyboard */,
+				A8145C061FB1617200FB3ED2 /* BFAppGeneral */,
+				A8145C051FB15F8400FB3ED2 /* BFAppBase */,
 				A8145BD61FB15E2800FB3ED2 /* ViewController.h */,
 				A8145BD71FB15E2800FB3ED2 /* ViewController.m */,
 				A8145BD91FB15E2800FB3ED2 /* Main.storyboard */,
-				A8145BDC1FB15E2800FB3ED2 /* Assets.xcassets */,
-				A8145BDE1FB15E2800FB3ED2 /* LaunchScreen.storyboard */,
-				A8145BE11FB15E2800FB3ED2 /* Info.plist */,
-				A8145BE21FB15E2800FB3ED2 /* main.m */,
 			);
 			path = BFWatchClientOC;
 			sourceTree = "<group>";
@@ -130,6 +139,68 @@
 				A8145BF91FB15E2800FB3ED2 /* Info.plist */,
 			);
 			path = BFWatchClientOCUITests;
+			sourceTree = "<group>";
+		};
+		A8145C051FB15F8400FB3ED2 /* BFAppBase */ = {
+			isa = PBXGroup;
+			children = (
+				A8145BD31FB15E2800FB3ED2 /* AppDelegate.h */,
+				A8145BD41FB15E2800FB3ED2 /* AppDelegate.m */,
+				A8145BDC1FB15E2800FB3ED2 /* Assets.xcassets */,
+				A8145BDE1FB15E2800FB3ED2 /* LaunchScreen.storyboard */,
+				A8145BE11FB15E2800FB3ED2 /* Info.plist */,
+				A8145BE21FB15E2800FB3ED2 /* main.m */,
+				A8145C151FB187C800FB3ED2 /* BFWatchClientOC.pch */,
+			);
+			path = BFAppBase;
+			sourceTree = "<group>";
+		};
+		A8145C061FB1617200FB3ED2 /* BFAppGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				A8145C0E1FB1830000FB3ED2 /* Tool */,
+			);
+			path = BFAppGeneral;
+			sourceTree = "<group>";
+		};
+		A8145C071FB1640000FB3ED2 /* Guide(引导模块) */ = {
+			isa = PBXGroup;
+			children = (
+				A8145C0B1FB164BB00FB3ED2 /* BFGuideVC.h */,
+				A8145C0C1FB164BB00FB3ED2 /* BFGuideVC.m */,
+			);
+			path = "Guide(引导模块)";
+			sourceTree = "<group>";
+		};
+		A8145C081FB1644900FB3ED2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A8145C091FB1649400FB3ED2 /* BFGuideSB.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A8145C0E1FB1830000FB3ED2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A8145C111FB1850E00FB3ED2 /* BFStoryboardTool.h */,
+				A8145C121FB1850E00FB3ED2 /* BFStoryboardTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A8145C0F1FB1843F00FB3ED2 /* Login(登录模块) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login(登录模块)";
+			sourceTree = "<group>";
+		};
+		A8145C101FB184A500FB3ED2 /* Main(主界面模块) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main(主界面模块)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +311,7 @@
 			files = (
 				A8145BE01FB15E2800FB3ED2 /* LaunchScreen.storyboard in Resources */,
 				A8145BDD1FB15E2800FB3ED2 /* Assets.xcassets in Resources */,
+				A8145C0A1FB1649400FB3ED2 /* BFGuideSB.storyboard in Resources */,
 				A8145BDB1FB15E2800FB3ED2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8145BD81FB15E2800FB3ED2 /* ViewController.m in Sources */,
+				A8145C0D1FB164BB00FB3ED2 /* BFGuideVC.m in Sources */,
 				A8145BE31FB15E2800FB3ED2 /* main.m in Sources */,
 				A8145BD51FB15E2800FB3ED2 /* AppDelegate.m in Sources */,
+				A8145C131FB1850E00FB3ED2 /* BFStoryboardTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +506,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J5C844G24;
-				INFOPLIST_FILE = BFWatchClientOC/Info.plist;
+				GCC_PREFIX_HEADER = BFWatchClientOC/BFAppBase/BFWatchClientOC.pch;
+				INFOPLIST_FILE = BFWatchClientOC/BFAppBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFWatchClientOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,11 +522,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J5C844G24;
-				INFOPLIST_FILE = BFWatchClientOC/Info.plist;
+				GCC_PREFIX_HEADER = BFWatchClientOC/BFAppBase/BFWatchClientOC.pch;
+				INFOPLIST_FILE = BFWatchClientOC/BFAppBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFWatchClientOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,15 @@
+//
+//  BFWatchClientOC.pch
+//  BFWatchClientOC
+//
+//  Created by Readboy_BFAlex on 2017/11/7.
+//  Copyright © 2017年 Readboy_BFAlex. All rights reserved.
+//
+
+#ifndef BFWatchClientOC_pch
+#define BFWatchClientOC_pch
+
+#pragma mark - Tool
+#import "BFStoryboardTool.h"
+
+#endif /* BFWatchClientOC_pch */

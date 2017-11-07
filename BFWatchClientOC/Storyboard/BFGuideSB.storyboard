@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GuideVC-->
+        <scene sceneID="S6d-Li-TTl">
+            <objects>
+                <viewController storyboardIdentifier="BFGuideVCID" id="BOa-T8-GeP" customClass="BFGuideVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mtr-iZ-V8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="qji-He-dxq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jtR-vn-CPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个引导页面" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kos-rx-QRb">
+                                <rect key="frame" x="118.5" y="323" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kos-rx-QRb" firstAttribute="centerY" secondItem="jtR-vn-CPJ" secondAttribute="centerY" id="C5u-Uq-pwS"/>
+                            <constraint firstItem="Kos-rx-QRb" firstAttribute="centerX" secondItem="jtR-vn-CPJ" secondAttribute="centerX" id="ElK-Wh-nW6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2N-zv-Jwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+</document>
